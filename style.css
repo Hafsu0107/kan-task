@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkgrey;
+  font-family: "Roboto", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 190px;
+  background-color: rgb(50 47 47);
+  height: 100%;
+  color: #beb4b4;
+}
+.sidebar header {
+  padding: 12px;
+}
+.sidebar ul {
+  padding: 6px;
+  line-height: 2;
+}
+.sidebar ul li {
+  padding-left: 6px;
+}
+.intro {
+  background-color: rgb(50 47 47);
+  margin-left: 180px;
+  padding: 13px;
+  color: rgb(231, 226, 226);
+}
+.boxes {
+  display: flex;
+  margin-left: 202px;
+}
+.icon-board {
+  padding-left: 3px;
+}
+.btn {
+  position: absolute;
+  left: 89%;
+  top: 10px;
+}
+button {
+  background-color: rgb(60, 60, 143);
+  padding: 12px;
+  border-radius: 29px;
+  border: none;
+  text-align: center;
+  color: white;
+}
+.themes {
+  background-color: rgb(23 21 21);
+  position: absolute;
+  top: 410px;
+  left: 15px;
+  width: 115px;
+  border-radius: 5px;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 300px;
+}
+.checkbox-label {
+  width: 49px;
+  height: 22px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(60, 60, 143);
+}
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 20px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+.icon-light {
+  position: absolute;
+  left: 93px;
+  top: 5%;
+}
+.hide-slidebar {
+  position: absolute;
+  top: 80%;
+  left: 19px;
+  display: flex;
+}
+.hide-slidebar p {
+  margin-left: 13px;
+}
+h3 {
+  background-color: rgb(60, 60, 143);
+  border-radius: 29px;
+  color: #beb4b4;
+  padding: 4px;
+  text-align: center;
+}
+.boxes {
+  background-color: rgb(33, 31, 31);
+  width: 86%;
+  margin-left: 190px;
+  color: white;
+  height: 786px;
+  line-height: 2;
+}
+h2 {
+  color: #beb4b4;
+  font-size: 14px;
+  margin-left: 23px;
+}
+.ball {
+  color: white;
+}
+.Todo {
+  margin-left: 23px;
+}
+.flow {
+  background-color: rgb(47, 42, 42);
+  width: 221px;
+  padding: 3px;
+  border-radius: 8px;
+}
+span {
+  color: #beb4b4;
+}
+.search {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 221px;
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 11px;
+}
+.ui {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 221px;
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 11px;
+}
+.user {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 221px;
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 11px;
+}
+.doing {
+  margin-left: 23px;
+}
+.pages {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 262px;
+  padding: 2px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.management {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 252px;
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.design {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 250px;
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 11px;
+}
+.enpoints {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 250px;
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 11px;
+}
+.endpoints {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 250px;
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 11px;
+}
+.models {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 253px;
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 11px;
+}
+.done {
+  margin-left: 23px;
+}
+
+.test {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 270px;
+  padding: 2px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.prototype {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 270px;
+  padding: 2px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.review {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 270px;
+  padding: 2px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.create {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 276px;
+  padding: 2px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.discovery {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 270px;
+  padding: 2px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.analysis {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 270px;
+  padding: 2px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.research {
+  margin-left: 3px;
+  background-color: rgb(47, 42, 42);
+  width: 270px;
+  padding: 2px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+p {
+  padding: 8px;
+}
+span {
+  padding-left: 7px;
+}
