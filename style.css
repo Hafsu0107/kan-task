@@ -9,11 +9,8 @@ body {
 }
 
 .sidebar {
-  position: fixed;
-  left: 0;
-  width: 190px;
   background-color: rgb(50 47 47);
-  height: 100%;
+
   color: #beb4b4;
 }
 .sidebar header {
@@ -22,6 +19,10 @@ body {
 .sidebar ul {
   padding: 6px;
   line-height: 2;
+  cursor: pointer;
+}
+.sidebar ul :hover {
+  background-color: rgb(60, 60, 143);
 }
 .sidebar ul li {
   padding-left: 6px;
@@ -31,18 +32,15 @@ body {
   margin-left: 180px;
   padding: 13px;
   color: rgb(231, 226, 226);
+  margin-top: -37%;
 }
-.boxes {
-  display: flex;
-  margin-left: 202px;
-}
+
 .icon-board {
   padding-left: 3px;
 }
 .btn {
-  position: absolute;
-  left: 89%;
-  top: 10px;
+  margin-top: -4%;
+  margin-left: 89%;
 }
 button {
   background-color: rgb(60, 60, 143);
@@ -54,11 +52,12 @@ button {
 }
 .themes {
   background-color: rgb(23 21 21);
-  position: absolute;
-  top: 410px;
-  left: 15px;
-  width: 115px;
+
   border-radius: 5px;
+  width: 125px;
+  padding-top: 10px;
+  text-align: center;
+  margin-top: 159px;
 }
 .checkbox {
   opacity: 0;
@@ -81,6 +80,10 @@ input {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(60, 60, 143);
+  margin-left: 21px;
+}
+.icon-dark {
+  margin-left: 4px;
 }
 .checkbox-label .ball {
   background-color: #fff;
@@ -93,14 +96,9 @@ input {
   transition: transform 0.2s linear;
 }
 .icon-light {
-  position: absolute;
-  left: 93px;
-  top: 5%;
+  margin-left: -112px;
 }
 .hide-slidebar {
-  position: absolute;
-  top: 80%;
-  left: 19px;
   display: flex;
 }
 .hide-slidebar p {
@@ -112,19 +110,46 @@ h3 {
   color: #beb4b4;
   padding: 4px;
   text-align: center;
+  cursor: pointer;
+  width: 14%;
 }
 .boxes {
   background-color: rgb(33, 31, 31);
   width: 86%;
   margin-left: 190px;
   color: white;
-  height: 786px;
+  height: 813px;
   line-height: 2;
+  display: flex;
 }
-h2 {
+.heading li {
   color: #beb4b4;
   font-size: 14px;
   margin-left: 23px;
+  margin-top: 22px;
+}
+.heading ::marker {
+  color: rgb(39, 134, 197);
+}
+
+.heading-two li {
+  color: #beb4b4;
+  font-size: 14px;
+  margin-left: 23px;
+  margin-top: 22px;
+}
+.heading-two ::marker {
+  color: rgb(152, 38, 152);
+}
+
+.heading-three li {
+  color: #beb4b4;
+  font-size: 14px;
+  margin-left: 23px;
+  margin-top: 22px;
+}
+.heading-three ::marker {
+  color: rgb(29, 189, 98);
 }
 .ball {
   color: white;
@@ -135,7 +160,7 @@ h2 {
 .flow {
   background-color: rgb(47, 42, 42);
   width: 221px;
-  padding: 3px;
+  padding: 6px;
   border-radius: 8px;
 }
 span {
@@ -145,7 +170,7 @@ span {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
   width: 221px;
-  padding: 3px;
+  padding: 6px;
   border-radius: 8px;
   margin-top: 11px;
 }
@@ -153,7 +178,7 @@ span {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
   width: 221px;
-  padding: 3px;
+  padding: 6px;
   border-radius: 8px;
   margin-top: 11px;
 }
@@ -161,7 +186,7 @@ span {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
   width: 221px;
-  padding: 3px;
+  padding: 6px;
   border-radius: 8px;
   margin-top: 11px;
 }
@@ -172,14 +197,14 @@ span {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
   width: 262px;
-  padding: 2px;
+  padding: 3px;
   border-radius: 8px;
-  margin-top: 8px;
+  margin-top: 1px;
 }
 .management {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
-  width: 252px;
+  width: 260px;
   padding: 3px;
   border-radius: 8px;
   margin-top: 8px;
@@ -187,7 +212,7 @@ span {
 .design {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
-  width: 250px;
+  width: 260px;
   padding: 3px;
   border-radius: 8px;
   margin-top: 11px;
@@ -195,7 +220,7 @@ span {
 .enpoints {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
-  width: 250px;
+  width: 260px;
   padding: 3px;
   border-radius: 8px;
   margin-top: 11px;
@@ -203,7 +228,7 @@ span {
 .endpoints {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
-  width: 250px;
+  width: 260px;
   padding: 3px;
   border-radius: 8px;
   margin-top: 11px;
@@ -211,8 +236,8 @@ span {
 .models {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
-  width: 253px;
-  padding: 3px;
+  width: 260px;
+  padding: 6px;
   border-radius: 8px;
   margin-top: 11px;
 }
@@ -223,7 +248,7 @@ span {
 .test {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
-  width: 270px;
+  width: 260px;
   padding: 2px;
   border-radius: 8px;
   margin-top: 8px;
@@ -231,7 +256,7 @@ span {
 .prototype {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
-  width: 270px;
+  width: 260px;
   padding: 2px;
   border-radius: 8px;
   margin-top: 8px;
@@ -239,7 +264,7 @@ span {
 .review {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
-  width: 270px;
+  width: 260px;
   padding: 2px;
   border-radius: 8px;
   margin-top: 8px;
@@ -247,7 +272,7 @@ span {
 .create {
   margin-left: 3px;
   background-color: rgb(47, 42, 42);
-  width: 276px;
+  width: 263px;
   padding: 2px;
   border-radius: 8px;
   margin-top: 8px;
@@ -277,7 +302,7 @@ span {
   margin-top: 8px;
 }
 p {
-  padding: 8px;
+  padding-left: 5px;
 }
 span {
   padding-left: 7px;
